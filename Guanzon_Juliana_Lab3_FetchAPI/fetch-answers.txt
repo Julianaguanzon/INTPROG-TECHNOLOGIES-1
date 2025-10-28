@@ -1,0 +1,19 @@
+What are the main differences between XMLHttpRequest and Fetch API?
+- XMLHttpRequest is the older way of making HTTP requests in JavaScript. It relies on callbacks and events to handle responses, which can make the code verbose and harder to read, especially when chaining multiple requests. 
+You have to manually create an XHR object, open it, set headers, and attach event handlers for success, errors, or state changes.
+While it provides useful features like progress events for uploads/downloads and built-in timeouts, handling responses usually requires parsing data manually. 
+XHR works in all browsers, including very old ones, and automatically sends cookies for same-origin requests.
+
+Why is the Fetch API considered more modern and readable?
+-There are various reasons why the Fetch API is regarded as more "modern" and readable than more traditional approaches (like XMLHttpRequest / XHR).
+These are the primary ones, along with justifications for why they result in code that is easier to read and maintain.
+
+What is the purpose of the .then() and .catch() methods in Fetch?
+-When you use the Fetch API (via fetch() in JavaScript), that call returns a Promise — a placeholder for a value that may arrive later. The .then() and .catch() methods are used to handle what happens when that 
+Promise either succeeds (is fulfilled) or fails (is rejected). Here's how they work in the context of Fetch
+
+What happens when you send a POST request to the placeholder API?
+-When you send a POST request to an API endpoint, you are typically sending data to the server to create a new resource or to submit data for processing. 
+The specific action performed depends on the API's design and the endpoint you are targeting. 
+If you send a POST request to a fake API like JSONPlaceholder's /posts endpoint with a JSON body containing title and body data, the API will simulate the creation of a new post. 
+The response would typically include the data you sent, along with an assigned id for the new post, and a 201 Created status code.
